@@ -14,7 +14,10 @@ const (
 )
 
 func main() {
-	start.Init{}.Start()
+	err, _ := start.Init{}.Start()
+	if err != nil {
+		panic(err)
+	}
 	NewGame := &game.Game{}
 	ebiten.SetWindowSize(screenWidth, screenHeight)
 	ebiten.SetWindowTitle("Go Game Example")
