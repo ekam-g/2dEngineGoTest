@@ -2,7 +2,7 @@ package main
 
 import (
 	"GoGame/func/game"
-	"GoGame/func/start"
+	"GoGame/func/game/start"
 	"github.com/hajimehoshi/ebiten/v2"
 	"log"
 )

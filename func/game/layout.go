@@ -1,7 +1,6 @@
 package game
 
 import (
-	"fmt"
 	"github.com/hajimehoshi/ebiten/v2"
 )
 
@@ -11,7 +10,6 @@ type Game struct{}
 // Update is called every tick (1/60 [s] by default).
 func (g *Game) Update() error {
 	// Write your game's logical update.
-	fmt.Println("Update")
 	return nil
 }
 
