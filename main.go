@@ -2,15 +2,21 @@ package main
 
 import (
 	"GoGame/func/game"
+	"GoGame/func/start"
 	"github.com/hajimehoshi/ebiten/v2"
 	"log"
 )
 
 // Game implements ebiten.Game interface.
+const (
+	screenWidth  = 800
+	screenHeight = 600
+)
+
 func main() {
+	start.Init{}.Start()
 	NewGame := &game.Game{}
-	// Specify the window size as you like. Here, a doubled size is specified.
-	ebiten.SetWindowSize(640, 480)
+	ebiten.SetWindowSize(screenWidth, screenHeight)
 	ebiten.SetWindowTitle("Go Game Example")
 	// Call ebiten.RunGame to start your NewGame loop.
 	if err := ebiten.RunGame(NewGame); err != nil {
