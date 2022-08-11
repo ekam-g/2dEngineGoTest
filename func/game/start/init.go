@@ -14,7 +14,7 @@ func (Init) Start() (err error, r Init) {
 	// Write your start cod here.
 	r.mainSprite, _, err = ebitenutil.NewImageFromFile("assets/mainGo.png")
 	if err != nil {
-		return errors.New("failed when initializing sprite" + err.Error()), r
+		return errors.New("failed when initializing sprite, error details:\n\n" + err.Error()), r
 	}
 	return err, r
 }

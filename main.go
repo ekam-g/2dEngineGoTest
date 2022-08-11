@@ -16,7 +16,7 @@ const (
 func main() {
 	err, _ := start.Init{}.Start()
 	if err != nil {
-		panic(err)
+		log.Println(err)
 	}
 	NewGame := &game.Game{}
 	ebiten.SetWindowSize(screenWidth, screenHeight)
