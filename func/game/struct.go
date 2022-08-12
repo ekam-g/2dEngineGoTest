@@ -1,12 +1,7 @@
 package game
 
-import (
-	"github.com/hajimehoshi/ebiten/v2"
-)
-
 var (
-	fullFace   *ebiten.Image
-	mainSprite *ebiten.Image
+	sprite spriteImage
 )
 
 type Game struct{}
