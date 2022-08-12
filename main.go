@@ -21,7 +21,6 @@ func main() {
 	NewGame := &game.Game{}
 	ebiten.SetWindowSize(screenWidth, screenHeight)
 	ebiten.SetWindowTitle("Go Game Example")
-	// Call ebiten.RunGame to start your NewGame loop.
 	if err := ebiten.RunGame(NewGame); err != nil {
 		log.Fatal(err)
 	}
