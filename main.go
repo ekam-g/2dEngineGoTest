@@ -14,7 +14,7 @@ const (
 
 func main() {
 	NewGame := &game.Game{}
-	err := NewGame.Start()
+	err := NewGame.Init()
 	if err != nil {
 		log.Panic(err)
 	}
